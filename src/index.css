@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+}
+
+.font-serif-luxury {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-royal {
+  font-family: 'Cinzel Decorative', Georgia, serif;
+}
+
+.luxury-card {
+  background: linear-gradient(180deg, #14151e 0%, #0d0e14 100%);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.luxury-card:hover {
+  border-color: rgba(212, 175, 55, 0.45);
+  box-shadow: 0 10px 30px -10px rgba(212, 175, 55, 0.12);
+}
+
+.btn-gold-primary {
+  background: linear-gradient(135deg, #d4af37 0%, #e6c86e 50%, #b89327 100%);
+  color: #0c0d12;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.25);
+  transition: all 0.25s ease;
+}
+
+.btn-gold-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.38);
+}
+
+.btn-gold-secondary {
+  background: rgba(212, 175, 55, 0.08);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  color: #f5eedf;
+  transition: all 0.25s ease;
+}
+
+.btn-gold-secondary:hover {
+  background: rgba(212, 175, 55, 0.16);
+  border-color: rgba(212, 175, 55, 0.6);
+  color: #ffffff;
+}
+
+.gold-glow-hero {
+  background: radial-gradient(circle at center, rgba(212, 175, 55, 0.15) 0%, rgba(12, 13, 18, 0) 70%);
+}
+
+/* Safe area padding helper for modern mobile devices (iPhone home indicator bar) */
+.safe-area-pb {
+  padding-bottom: max(0.6rem, env(safe-area-inset-bottom));
+}

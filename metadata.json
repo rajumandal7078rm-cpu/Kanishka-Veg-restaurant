@@ -1,0 +1,6 @@
+{
+  "name": "Kanishka Veg Restaurant",
+  "description": "Official website and digital ordering portal for Kanishka Veg Restaurant at Haji Ali Circle, Tardeo, Mumbai, featuring pure vegetarian and Jain multi-cuisine dining, interactive menu, live meal schedules, and WhatsApp ordering.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
