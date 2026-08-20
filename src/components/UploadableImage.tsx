@@ -43,6 +43,11 @@ export const UploadableImage: React.FC<UploadableImageProps> = ({
           referrerPolicy="no-referrer"
           className={className}
           loading="lazy"
+          onError={(e) => {
+            if (e.currentTarget.src !== defaultSrc) {
+              e.currentTarget.src = defaultSrc;
+            }
+          }}
         />
       </div>
     );
